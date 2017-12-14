@@ -1,0 +1,33 @@
+div {
+    height: 200px;
+    width: 200px;
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+}
+
+li {
+    height: 25px;
+    width: 180px;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+}
+
+li:hover {
+    background-color: #00C957;
+}
+
+@keyframes roll {
+    0% {
+        margin-left: -200px;
+    }
+    100% {
+        margin-left: -10px;
+    }
+}
